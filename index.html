@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrainVitals</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 BrainVitals</h1>
+    <p class="tagline">Stay Ahead of Stroke with BrainVitals</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Brain Stroke Prediction Form</h2>
+      <form id="strokeForm">
+        <label>Age: <input type="number" name="age" required /></label>
+        <label>Gender:
+          <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Hypertension:
+          <select name="hypertension">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </label>
+        <label>Heart Disease:
+          <select name="heart_disease">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </label>
+        <label>BMI: <input type="number" name="bmi" step="0.1" required /></label>
+        <button type="submit">Predict</button>
+      </form>
+    </section>
+
+    <section class="result-section hidden" id="resultBox">
+      <h3>🧾 Diagnosis Report</h3>
+      <div class="report-box">
+        <p><strong>Prediction Result:</strong> <span id="predictionText"></span></p>
+        <p><strong>Precautions:</strong></p>
+        <ul id="precautionList">
+          <li>Regular health check-ups</li>
+          <li>Maintain a healthy lifestyle</li>
+          <li>Manage blood pressure and cholesterol</li>
+        </ul>
+      </div>
+      <button onclick="window.print()">🖨️ Print Report</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© BrainVitals all rights reserved</p>
+    <p>Contact:
+      Vineesha - vineesha76004@gmail.com |
+      Satwik - satwik.b2k4@gmail.com |
+      Ajar Saani - ajarsaani665@gmail.com |
+      Shreekha - shreekhachippada@gmail.com
+    </p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
